@@ -1,0 +1,9 @@
+<%- include('partials/header'); %>
+<% for( let index = 0; index < contenido.length; index++ ) { %>
+    <%if(contenido[index].titulo == titulo) {%>
+        <h2><%= contenido[index].titulo; %></h2>
+        <p><%= contenido[index].texto; %></p>
+    <%}%>
+<% } %>
+
+<%- include('partials/footer'); %>
